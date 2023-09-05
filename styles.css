@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+body {
+    display: flex;
+    background-color: #b89681;
+
+}
+
+p{
+    font-family: 'Exo 2', sans-serif;
+    font-size: large;
+}
+
+#leftDiv {
+    width: 30%;
+    height:auto;
+    padding: 0px 50px 100px;
+    text-align: center;
+}
+
+#Heading {
+    margin:auto;
+    display:block;
+    font-family: 'Montserrat';
+    padding: 20px 0px 40px;
+}
+
+#Heading p{
+    margin: 0px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+#leftDiv button {
+    margin: 15px auto;
+    display: block;
+    font-size: large;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    border-color: #ae3f3b;
+}
+
+#leftDiv button:hover {
+    background-color: rgb(253, 223, 183);
+    transform: scale(1.1);
+    border-color: chocolate;
+}
+
+#rightDiv {
+    margin:20px;
+    width: 70%;
+    height: auto;
+    background-color: #f0e1bf;
+    border-radius: 40px;
+    border: 4px solid rgb(254, 204, 166);
+    text-align: center;
+}
+
+#menuDiv, #cupSizeDiv, #unitsDiv, #payDiv, #proceedDiv {
+    display: none;
+    padding: 30px;
+}
+
+#Welcome img{
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 450px;
+}
+#Welcome p{
+    font-size: x-large;
+}
+
+#menuDiv img {
+    height: 150px;
+    width: 150px;
+}
+
+#menuDiv button{
+    background-color: snow;
+    border-radius: 20px;
+    display:inline;
+    margin: 10px;
+    border: 4px solid #B9B4C7;
+}
+
+#menuDiv button:hover, #cupSizeDiv button:hover, #unitsDiv button:hover{
+    background-color: #f8d79a;
+    transform: scale(1.1);
+    border-color: azure;
+}
+
+#cupSizeDiv button, #unitsDiv button {
+    background-color: snow;
+    border-radius: 20px;
+    display:inline;
+    margin: 40px;
+    border: 4px solid #B9B4C7;
+}
+
+#unitsDiv{
+    margin: 40px;
+}
+
+#unitInput{
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid chocolate;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Exo 2';
+}
+
+#progressBar {
+    height: 50px;
+    width: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+#payblocks button{
+    display: inline;
+    background-color: rgb(252, 247, 222);
+    border-radius: 20px;
+    margin: 10px;
+    border: 4px solid #B9B4C7;
+}
+#payblocks button:hover{
+    background-color: #d9f89a;
+    transform: scale(1.1);
+    border-color: azure;
+}
+#payblocks p{
+    padding: 10px 20px;
+    margin: 0px
+}
+
+#payblocks input {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    margin: 15px;
+    border: 1px solid cornsilk;
+    font-family: 'Exo 2';
+    font-size: medium;
+}
+
+#selectedCoffee, #selectedCupSize, #totalPrice {
+    font-family: 'Exo 2', sans-serif;
+    font-size: medium;
+}
+
+#change {
+    padding: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-size:xx-large;
+}

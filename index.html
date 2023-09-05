@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Vending Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="leftDiv">
+        <div id="Heading"><p>Yashpal's <br>Coffee Vending Machine<p></div>
+        <button onclick="showMenu()">Menu</button>
+        <button onclick="showCupSize()">Cup Size</button>
+        <button onclick="showUnits()">Units</button>
+        <button onclick="showPay()">Pay</button>
+        <button onclick="proceed()">Proceed</button>
+    </div>
+    <div id="rightDiv">
+        <div id="Welcome">
+            <img src="images\homecoffee.png">
+            <p>Welcome !!</p>
+        </div>
+        <div id="menuDiv">
+            <button onclick="selectCoffee('Espresso', 150)">
+                <img src="images\espresso.png"><p>Espresso - 150₹</p>
+            </button>
+            <button onclick="selectCoffee('Cappuccino', 160)">
+                <img src="images\cappuccino.png"><p>Cappuccino - 160₹</p>
+            </button>
+            <button onclick="selectCoffee('Latte', 170)">
+                <img src="images\latte.png"><p>Latte - 170₹</p>
+            </button>
+            <br>
+            <button onclick="selectCoffee('Mocha', 150)">
+                <img src="images\mocha.png"><p>Mocha - 150₹</p>
+            </button>
+            <button onclick="selectCoffee('Americano', 160)">
+                <img src="images\americano.png"><p>Americano - 160₹</p>
+            </button>
+            <div id="selectedCoffee"></div>
+        </div>
+        <div id="cupSizeDiv">
+            <button onclick="selectCupSize('Small', 1)"><p>Small</p></button>
+            <button onclick="selectCupSize('Medium', 1.25)"><p>Medium</p></button>
+            <button onclick="selectCupSize('Large', 1.5)"><p>Large</p></button>
+            <div id="selectedCupSize"></div>
+        </div>
+        <div id="unitsDiv">
+            <input type="number" id="unitInput" placeholder="Enter units">
+            <progress id="progressBar" value="0" max="100"></progress>
+            <button onclick="calculatePrice()"><p>Calculate Total</p></button>
+            <div id="totalPrice"></div>
+        </div>
+        <div id="payDiv">
+            <div id="payblocks">
+                <button onclick="toggleCurrencyInput(5)" data-value="5"><p>5 ₹</p></button>
+                <button onclick="toggleCurrencyInput(10)" data-value="10"><p>10 ₹</p></button>
+                <button onclick="toggleCurrencyInput(20)" data-value="20"><p>20 ₹</p></button>
+                <br>
+                <button onclick="toggleCurrencyInput(100)" data-value="100"><p>100 ₹</p></button>
+                <button onclick="toggleCurrencyInput(200)" data-value="200"><p>200 ₹</p></button>
+                <button onclick="toggleCurrencyInput(500)" data-value="500"><p>500 ₹</p></button>                
+            </div>
+            <div id="currencyInputs"></div>
+        </div>
+        <div id="proceedDiv">
+            <div id="change"></div>
+            <div id="thankYou" style="display: none;"><p>Thank you for your order!</p></div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
