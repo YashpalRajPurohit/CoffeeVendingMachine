@@ -92,16 +92,45 @@ p{
     border-color: azure;
 }
 
-#cupSizeDiv button, #unitsDiv button {
+#cupSizeDiv {
+    margin-top: 80px;
+}
+#cupSizeDiv button {
+    background-color: snow;
+    border-radius: 20px;
+    display:inline;
+    margin: 60px 30px;
+    border: 4px solid #B9B4C7;
+}
+#cupSizeDiv p{
+    margin: 0px;
+    font-size: x-large;
+}
+#smallsize{
+    width: 110px;
+    height: 150px;
+    padding: 3px;
+}
+#mediumsize{
+    width: 110px;
+    height: 165px;
+    padding: 3px;
+}
+#largesize{
+    width: 120px;
+    height: 180px;
+    padding: 3px;
+}
+
+#unitsDiv button {
     background-color: snow;
     border-radius: 20px;
     display:inline;
     margin: 40px;
     border: 4px solid #B9B4C7;
 }
-
 #unitsDiv{
-    margin: 40px;
+    margin: 110px 40px 0px;
 }
 
 #unitInput{
