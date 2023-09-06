@@ -20,16 +20,19 @@ p{
 }
 
 #Heading {
-    margin:auto;
+    margin:20px auto;
     display:block;
     font-family: 'Montserrat';
-    padding: 20px 0px 40px;
+    border-radius: 70px;
+    background-color: #f9edd7;
 }
 
 #Heading p{
     margin: 0px;
     font-size: xx-large;
     font-weight: 600;
+    color: #da2620;
+    padding: 1px 3px;
 }
 
 #leftDiv button {
