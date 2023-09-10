@@ -7,27 +7,27 @@ body {
 
 }
 
-p{
+p {
     font-family: 'Exo 2', sans-serif;
     font-size: large;
 }
 
 #leftDiv {
     width: 30%;
-    height:auto;
+    height: auto;
     padding: 0px 50px 100px;
     text-align: center;
 }
 
 #Heading {
-    margin:20px auto;
-    display:block;
+    margin: 20px auto;
+    display: block;
     font-family: 'Montserrat';
     border-radius: 70px;
     background-color: #f9edd7;
 }
 
-#Heading p{
+#Heading p {
     margin: 0px;
     font-size: xx-large;
     font-weight: 600;
@@ -52,7 +52,7 @@ p{
 }
 
 #rightDiv {
-    margin:20px;
+    margin: 20px;
     width: 70%;
     height: auto;
     background-color: #f0e1bf;
@@ -61,18 +61,23 @@ p{
     text-align: center;
 }
 
-#menuDiv, #cupSizeDiv, #unitsDiv, #payDiv, #proceedDiv {
+#menuDiv,
+#cupSizeDiv,
+#unitsDiv,
+#payDiv,
+#proceedDiv {
     display: none;
     padding: 30px;
 }
 
-#Welcome img{
+#Welcome img {
     margin: auto;
     display: block;
     width: 400px;
     height: 450px;
 }
-#Welcome p{
+
+#Welcome p {
     font-size: x-large;
 }
 
@@ -81,15 +86,17 @@ p{
     width: 150px;
 }
 
-#menuDiv button{
+#menuDiv button {
     background-color: snow;
     border-radius: 20px;
-    display:inline;
+    display: inline;
     margin: 10px;
     border: 4px solid #B9B4C7;
 }
 
-#menuDiv button:hover, #cupSizeDiv button:hover, #unitsDiv button:hover{
+#menuDiv button:hover,
+#cupSizeDiv button:hover,
+#unitsDiv button:hover {
     background-color: #f8d79a;
     transform: scale(1.1);
     border-color: azure;
@@ -98,46 +105,52 @@ p{
 #cupSizeDiv {
     margin-top: 80px;
 }
+
 #cupSizeDiv button {
     background-color: snow;
     border-radius: 20px;
-    display:inline;
+    display: inline;
     margin: 60px 30px;
     border: 4px solid #B9B4C7;
 }
-#cupSizeDiv p{
+
+#cupSizeDiv p {
     margin: 0px;
     font-size: x-large;
 }
-#smallsize{
-    width: 110px;
+
+#smallsize {
+    width: 100px;
     height: 150px;
-    padding: 3px;
+    padding: 4px;
 }
-#mediumsize{
-    width: 110px;
+
+#mediumsize {
+    width: 105px;
     height: 165px;
-    padding: 3px;
+    padding: 4px;
 }
-#largesize{
-    width: 120px;
+
+#largesize {
+    width: 110px;
     height: 180px;
-    padding: 3px;
+    padding: 4px;
 }
 
 #unitsDiv button {
     background-color: snow;
     border-radius: 20px;
-    display:inline;
+    display: inline;
     margin: 40px;
     border: 4px solid #B9B4C7;
 }
-#unitsDiv{
+
+#unitsDiv {
     margin: 110px 40px 0px;
 }
 
-#unitInput{
-    border-radius: 5px;
+#unitInput {
+    border-radius: 60px;
     height: 50px;
     width: 200px;
     border: 2px solid chocolate;
@@ -155,19 +168,21 @@ p{
     display: block;
 }
 
-#payblocks button{
+#payblocks button {
     display: inline;
     background-color: rgb(252, 247, 222);
     border-radius: 20px;
     margin: 10px;
     border: 4px solid #B9B4C7;
 }
-#payblocks button:hover{
+
+#payblocks button:hover {
     background-color: #d9f89a;
     transform: scale(1.1);
     border-color: azure;
 }
-#payblocks p{
+
+#payblocks p {
     padding: 10px 20px;
     margin: 0px
 }
@@ -182,7 +197,9 @@ p{
     font-size: medium;
 }
 
-#selectedCoffee, #selectedCupSize, #totalPrice {
+#selectedCoffee,
+#selectedCupSize,
+#totalPrice {
     font-family: 'Exo 2', sans-serif;
     font-size: medium;
 }
@@ -190,5 +207,11 @@ p{
 #change {
     padding: 50px;
     font-family: 'Exo 2', sans-serif;
-    font-size:xx-large;
+    font-size: xx-large;
+}
+
+#tqimg {
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
 }

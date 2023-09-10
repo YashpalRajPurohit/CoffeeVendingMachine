@@ -20,7 +20,7 @@ function showPay() {
 
 function hideAllDivs() {
     var divs = document.querySelectorAll("#rightDiv > div");
-    divs.forEach(function(div) {
+    divs.forEach(function (div) {
         div.style.display = "none";
     });
 }
@@ -44,18 +44,19 @@ function selectCupSize(size, xvalue) {
 function calculatePrice() {
     var unitInput = document.getElementById("unitInput").value;
     var totalPrice = selectedCoffeePrice * x_value * unitInput;
-    document.getElementById("totalPrice").innerHTML = "Total Price: " + totalPrice.toFixed(2) + " ₹";
-
+    setTimeout(function () {
+        document.getElementById("totalPrice").innerHTML = "Total Price: " + totalPrice.toFixed(2) + " ₹";
+    }, 1500);
     var progressBar = document.getElementById("progressBar");
     progressBar.value = 0;
     var progress = 0;
-    var interval = setInterval(function() {
+    var interval = setInterval(function () {
         progress += 1;
         progressBar.value = progress;
         if (progress >= 100) {
             clearInterval(interval);
         }
-    }, 5);
+    }, 15);
 }
 
 var currencies = {
@@ -75,12 +76,12 @@ function toggleCurrencyInput(value) {
         currencyInput.id = "currencyInput_" + value;
         currencyInput.type = "number";
         currencyInput.value = currencies[value];
-        currencyInput.addEventListener("change", function() {
+        currencyInput.addEventListener("change", function () {
             currencies[value] = parseFloat(currencyInput.value);
         });
         var button = document.querySelector("button[data-value='" + value + "']");
         button.appendChild(currencyInput);
-    } 
+    }
 }
 
 function calculateChange() {
@@ -99,7 +100,7 @@ function calculateChange() {
 function proceed() {
     var change = calculateChange();
     if (change < 0) {
-        alert("Insufficient amount to pay.");
+        alert("Insufficient amount, add more.");
         showPay();
     } else {
         hideAllDivs();
